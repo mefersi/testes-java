@@ -1,8 +1,8 @@
-package application;
+package test;
 
-import entities.Filha;
+import model.Filha;
 
-public class Pr04TestePaiFilha {
+public class TestePaiFilha {
 
 	public static void main(String[] args) {
 		

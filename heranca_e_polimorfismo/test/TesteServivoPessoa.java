@@ -1,9 +1,9 @@
-package application;
+package test;
 
-import entities.SerHumano;
-import entities.SerVivo;
+import model.SerHumano;
+import model.SerVivo;
 
-public class Pr01TesteServivoPessoa {
+public class TesteServivoPessoa {
 
 	public static void main(String[] args) {
 		

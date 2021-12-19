@@ -1,4 +1,4 @@
-package banco.entities;
+package model;
 
 public class Cliente {
 

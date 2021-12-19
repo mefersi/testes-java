@@ -1,4 +1,3 @@
-/application/
-/banco/
-/empresa/
-/entities/
+/model/
+/test/
+/rascunho/

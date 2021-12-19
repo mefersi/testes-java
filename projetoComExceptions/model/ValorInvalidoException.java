@@ -1,4 +1,4 @@
-package banco.entities;
+package model;
 
 public class ValorInvalidoException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

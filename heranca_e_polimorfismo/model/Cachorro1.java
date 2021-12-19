@@ -1,4 +1,4 @@
-package entities;
+package model;
 
 public class Cachorro1 extends Animal1 {
 

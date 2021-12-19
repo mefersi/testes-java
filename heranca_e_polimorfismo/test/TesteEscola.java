@@ -1,11 +1,11 @@
-package application;
+package test;
 
-import entities.Aluno;
-import entities.GerenciaEscola;
-import entities.Instrutor;
-import entities.Pessoa1;
+import model.Aluno;
+import model.GerenciaEscola;
+import model.Instrutor;
+import model.Pessoa1;
 
-public class Pr03TesteEscola {
+public class TesteEscola {
 
 	public static void main(String[] args) {
 		

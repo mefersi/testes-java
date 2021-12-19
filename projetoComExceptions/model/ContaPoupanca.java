@@ -1,4 +1,4 @@
-package banco.entities;
+package model;
 
 public class ContaPoupanca extends Conta implements Extrato {
 	
@@ -19,6 +19,8 @@ public class ContaPoupanca extends Conta implements Extrato {
 		return extrato.geraExtrato(c);
 	}
 
-	
-
+	@Override
+	public String toString() {
+		return "ContaPoupanca, " + super.toString();
+	}
 }

@@ -1,4 +1,4 @@
-package entities;
+package model;
 
 public class Instrutor extends Pessoa1 {
 

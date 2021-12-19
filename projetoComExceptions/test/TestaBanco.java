@@ -1,12 +1,12 @@
-package banco.application;
+package test;
 
-import banco.entities.Cliente;
-import banco.entities.Conta;
-import banco.entities.ContaCorrente;
-import banco.entities.ExtratoUtil;
-import banco.entities.ValorInvalidoException;
+import model.Cliente;
+import model.Conta;
+import model.ContaCorrente;
+import model.ExtratoUtil;
+import model.ValorInvalidoException;
 
-public class Pr01TestaBanco {
+public class TestaBanco {
 
 	public static void main(String[] args) {
 		
@@ -17,7 +17,7 @@ public class Pr01TestaBanco {
 			c1.setNome("Maria Silva");
 			cc1.deposita(250.0);
 			cc1.setTitular(c1);
-			//System.out.println(cc1.extratoConta(cc1));
+//			System.out.println(cc1.extratoConta(cc1));
 			
 			ExtratoUtil extrato = new ExtratoUtil();
 			System.out.println(extrato.geraExtrato(cc1));

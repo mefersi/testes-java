@@ -1,6 +1,6 @@
-package entities;
+package model;
 
-public class Vendedor extends Pessoa implements LoginLoja {
+public class Vendedor extends PessoaLoja implements LoginLoja {
 
 	private int codigo;
 	private AutenticaUsuario autenticador;

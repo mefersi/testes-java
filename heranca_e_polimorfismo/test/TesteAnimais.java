@@ -1,10 +1,10 @@
-package application;
+package test;
 
-import entities.Animal1;
-import entities.Cachorro1;
-import entities.Gato1;
+import model.Animal1;
+import model.Cachorro1;
+import model.Gato1;
 
-public class Pr02TesteAnimais {
+public class TesteAnimais {
 
 	public static void main(String[] args) {
 		

@@ -1,11 +1,11 @@
-package entities;
+package model;
 
-public class Cliente3 extends Pessoa implements LoginLoja {
+public class ClienteLoja extends PessoaLoja implements LoginLoja {
 
 	private String sexo;
 	private AutenticaUsuario autenticador;
 	
-	public Cliente3() {
+	public ClienteLoja() {
 		autenticador = new AutenticaUsuario();
 	}
 	

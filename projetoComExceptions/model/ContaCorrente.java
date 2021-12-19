@@ -1,4 +1,4 @@
-package banco.entities;
+package model;
 
 public class ContaCorrente extends Conta implements Extrato {
 
@@ -37,6 +37,11 @@ public class ContaCorrente extends Conta implements Extrato {
 	@Override
 	public String extratoConta(Conta c) {
 		return extrato.geraExtrato(c);
+	}
+
+	@Override
+	public String toString() {
+		return "ContaCorrente, " + super.toString();
 	}
 
 }
