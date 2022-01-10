@@ -2,7 +2,7 @@ package model;
 
 public interface LoginLoja {
 
-	public void setUsuario(String usuario);
-	public void setSenha(int senha);
-	public boolean autentica(int senha);
+	void setUsuario(String usuario);
+	void setSenha(int senha);
+	boolean autentica(int senha);
 }

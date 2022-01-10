@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import model.Cliente;
-import model.Conta;
-import model.ContaCorrente;
-
 public class TesteClassesAnonimas2 {
 
 	public static void main(String[] args) {

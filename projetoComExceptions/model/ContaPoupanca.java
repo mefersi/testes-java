@@ -15,7 +15,7 @@ public class ContaPoupanca extends Conta implements Extrato {
 	}
 
 	@Override
-	public String extratoConta(Conta c) {
+	public String exibeExtrato(Conta c) {
 		return extrato.geraExtrato(c);
 	}
 

@@ -58,7 +58,6 @@ class TitularDaContaComparator implements Comparator<Conta> {
 	public int compare(Conta c1, Conta c2) {
 		return c1.getTitular().getNome().compareTo(c2.getTitular().getNome());
 	}
-	
 }
 class NumeroDaContaComparator implements Comparator<Conta> {
 

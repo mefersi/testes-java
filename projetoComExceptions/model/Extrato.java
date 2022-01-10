@@ -2,5 +2,5 @@ package model;
 
 public interface Extrato {
 
-	public String extratoConta(Conta c);
+	public String exibeExtrato(Conta c);
 }

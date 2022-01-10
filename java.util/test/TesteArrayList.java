@@ -34,5 +34,7 @@ public class TesteArrayList {
 		for (String nome : otherList) {
 			System.out.println(nome);
 		}
+		
+		sc.close();
 	}
 }

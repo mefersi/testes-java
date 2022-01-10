@@ -1,7 +1,10 @@
 package model;
 
-public class Cliente {
+import java.io.Serializable;
 
+public class Cliente implements Comparable<Cliente>, Serializable {
+	private static final long serialVersionUID = 1L;
+	
 	private String nome;
 	private String cpf;
 	private String email;
@@ -30,6 +33,11 @@ public class Cliente {
 	}
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
+	}
+	
+	@Override
+	public int compareTo(Cliente o) {
+		return this.getNome().compareTo(o.getNome());
 	}
 
 }

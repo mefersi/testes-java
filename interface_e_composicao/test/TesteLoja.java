@@ -16,8 +16,8 @@ public class TesteLoja {
 		//cliente.autentica(123);
 		System.out.println(cliente.autentica(333));
 		
-		//SistemaSite sistema = new SistemaSite();
-		//sistema.autenticacao(cliente);
+		SistemaSite sistema = new SistemaSite();
+		sistema.autenticacao(cliente);
 	
 		
 	}

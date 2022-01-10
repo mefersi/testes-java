@@ -15,6 +15,7 @@ public class ContaCorrente extends Conta implements Extrato {
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
+		this.extrato = new ExtratoUtil();
 	}
 
 	@Override
@@ -35,7 +36,7 @@ public class ContaCorrente extends Conta implements Extrato {
 	}
 
 	@Override
-	public String extratoConta(Conta c) {
+	public String exibeExtrato(Conta c) {
 		return extrato.geraExtrato(c);
 	}
 

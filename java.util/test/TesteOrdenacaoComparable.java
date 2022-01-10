@@ -1,6 +1,7 @@
 package test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import model.Cliente;
@@ -39,7 +40,8 @@ public class TesteOrdenacaoComparable {
 		}
 		System.out.println("-----------------------------------------------");
 		
-		lista.sort(null);
+		//lista.sort(null);
+		Collections.sort(lista);
 		
 		for (Conta conta : lista) {
 			System.out.println(conta);
