@@ -18,13 +18,11 @@ public class TesteMethodReferencesDoce {
 				new Doce("Bala", 0.25),
 				new Doce("Disqueti", 18.00));
 		
-		System.out.println(doces);
-		
 		doces.forEach(TesteDoce::imprimeDoce);
 		
-//		Consumer<Doce> saidaComLambda = d -> d.comparePorNome(d, d);
+		Consumer<Doce> saidaComLambda = d -> d.comparePorNome(d, d);
 //		Consumer<Doce> saidaComMethodReferences = Doce::comparePorPreco;
 		
-//		doces.forEach(saidaComLambda);
+		doces.forEach(saidaComLambda);
 	}
 }
