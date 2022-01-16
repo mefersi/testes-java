@@ -1,11 +1,11 @@
 package model;
 
-public class Vendedor extends PessoaLoja implements LoginLoja {
+public class VendedorLoja extends PessoaLoja implements LoginLoja {
 
 	private int codigo;
 	private AutenticaUsuario autenticador;
 	
-	public Vendedor() {
+	public VendedorLoja() {
 		autenticador = new AutenticaUsuario();
 	}
 	
