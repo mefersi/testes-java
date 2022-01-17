@@ -1,4 +1,4 @@
-package modelTreino;
+package model;
 
 public class Author {
 

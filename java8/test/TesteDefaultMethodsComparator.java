@@ -1,11 +1,10 @@
-package testAulas;
+package test;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
 
-public class TesteDefaultMethodsComparatorEConsumer {
+public class TesteDefaultMethodsComparator {
 
 	public static void main(String[] args) {
 
@@ -16,25 +15,13 @@ public class TesteDefaultMethodsComparatorEConsumer {
 		nomes.add("Julia");
 		nomes.add("Jaqueline");
 
-		Comparator<String> comparador = new NomeComparator2();
+		Comparator<String> comparador = new NomeComparator();
 		nomes.sort(comparador);
-//		nomes.forEach(n -> System.out.println(n));
-
-		Consumer<String> consumidor = new ImprimeNomes();
-		nomes.forEach(consumidor);
-
+		nomes.forEach(n -> System.out.println(n));
 	}
 }
 
-class ImprimeNomes implements Consumer<String> {
-
-	@Override
-	public void accept(String s) {
-		System.out.println(s);
-	}
-}
-
-class NomeComparator2 implements Comparator<String> {
+class NomeComparator implements Comparator<String> {
 
 	@Override
 	public int compare(String s1, String s2) {

@@ -1,11 +1,10 @@
-package testTreino;
+package test;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-import modelTreino.Author;
-import modelTreino.Doce;
+import model.Doce;
 
 public class TesteMethodReferencesDoce {
 

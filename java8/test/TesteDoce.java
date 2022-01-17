@@ -1,6 +1,6 @@
-package testTreino;
+package test;
 
-import modelTreino.Doce;
+import model.Doce;
 
 public class TesteDoce {
 
