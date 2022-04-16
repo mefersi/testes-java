@@ -37,6 +37,7 @@ public class Musica implements Comparable<Musica> {
 
 	@Override
 	public int compareTo(Musica outraMusica) {
-		return this.nome.compareTo(outraMusica.nome);
+//		return this.nome.compareTo(outraMusica.nome);
+		return Double.compare(this.tempo, outraMusica.tempo);
 	}
 }

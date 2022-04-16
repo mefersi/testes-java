@@ -62,7 +62,7 @@ public abstract class Conta implements Comparable<Conta> {
 		this.saldo += valor;
 	}
 	
-	public void saca(double valor) {
+	public String saca(double valor) {
 		if (this.saldo < valor) {
 			throw new ValorInvalidoException("Saldo insuficiente para realizar o saque");
 		}
@@ -70,6 +70,7 @@ public abstract class Conta implements Comparable<Conta> {
 			throw new ValorInvalidoException("Valor de saque deve ser maior que zero");
 		}
 		this.saldo -= valor;
+		return "Saque efetuado com sucesso!";
 	}
 	
 	public abstract void transfere(double valor, Conta destino);

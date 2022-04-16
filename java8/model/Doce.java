@@ -18,11 +18,11 @@ public class Doce {
 		return preco;
 	}
 	
-	public int comparePorNome(Doce a, Doce b) {
+	public static int comparePorNome(Doce a, Doce b) {
 		return a.getNome().compareTo(b.getNome());
 	}
 	
-	public int comparePorPreco(Doce a, Doce b) {
+	public static int comparePorPreco(Doce a, Doce b) {
 		return Double.compare(a.getPreco(), b.getPreco());
 	}
 	

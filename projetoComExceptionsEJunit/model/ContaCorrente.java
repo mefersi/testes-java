@@ -19,14 +19,14 @@ public class ContaCorrente extends Conta implements Extrato {
 	}
 
 	@Override
-	public void saca(double valor) {
+	public String saca(double valor) {
 		if (valor > limiteSaque) {
 			throw new ValorInvalidoException("Valor de saque superior ao limite");
 		}
 		if (valor <= 0) {
 			throw new ValorInvalidoException("Valor de saque deve ser maior que zero");
 		}
-		super.saca(valor);
+		return super.saca(valor);
 	}
 
 	@Override

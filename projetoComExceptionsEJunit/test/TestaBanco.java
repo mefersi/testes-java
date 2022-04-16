@@ -13,6 +13,7 @@ public class TestaBanco {
 		Cliente c1 = new Cliente();
 		c1.setNome("Maria Silva");
 		cc1.setTitular(c1);
+		cc1.setLimiteSaque(500);
 		
 		try {
 			cc1.deposita(250.0);
@@ -21,7 +22,7 @@ public class TestaBanco {
 		} 
 		
 		System.out.println(cc1.exibeExtrato(cc1));
-		
+		cc1.saca(100);
 //		ExtratoUtil extrato = new ExtratoUtil();
 //		System.out.println(extrato.geraExtrato(cc1));
 		

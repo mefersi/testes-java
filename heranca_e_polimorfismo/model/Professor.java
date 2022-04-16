@@ -1,6 +1,6 @@
 package model;
 
-public class Instrutor extends Pessoa1 {
+public class Professor extends Pessoa1 {
 
 	private String disciplina;
 	
