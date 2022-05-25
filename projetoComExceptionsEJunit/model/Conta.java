@@ -7,10 +7,10 @@ public abstract class Conta implements Comparable<Conta> {
 	private int numero;
 	private Cliente titular;
 	private static int totalContasNoBanco;
-	
+
 	public Conta(int agencia, int numero) {
 		totalContasNoBanco++;
-		if (agencia >= 0 && numero <=0) {
+		if (agencia >= 0 && numero <= 0) {
 			throw new IllegalArgumentException("Agencia e/ou numero da conta tem de ser maior que zero");
 		}
 		this.agencia = agencia;
@@ -54,14 +54,14 @@ public abstract class Conta implements Comparable<Conta> {
 	public static int getTotalContasNoBanco() {
 		return totalContasNoBanco;
 	}
-	
+
 	public void deposita(double valor) {
-		if (valor <=0) {
+		if (valor <= 0) {
 			throw new ValorInvalidoException("Valor de deposito deve ser maior que zero");
 		}
 		this.saldo += valor;
 	}
-	
+
 	public String saca(double valor) {
 		if (this.saldo < valor) {
 			throw new ValorInvalidoException("Saldo insuficiente para realizar o saque");
@@ -72,14 +72,14 @@ public abstract class Conta implements Comparable<Conta> {
 		this.saldo -= valor;
 		return "Saque efetuado com sucesso!";
 	}
-	
+
 	public abstract void transfere(double valor, Conta destino);
 
 	@Override
 	public int compareTo(Conta c) {
 		return Integer.compare(this.numero, c.getNumero());
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Numero: " + this.numero + ", Agencia: " + this.agencia;

@@ -6,5 +6,4 @@ public class Cachorro2 extends Animal2 {
 	public String movimenta() {
 		return "Andando e correndo";
 	}
-
 }

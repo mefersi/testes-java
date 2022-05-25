@@ -5,7 +5,7 @@ public class Brinquedo implements ItemPedido {
 	private Integer codigo;
 	private Double valor;
 	private String descricao;
-	
+
 	@Override
 	public Integer getCodigo() {
 		return codigo;
@@ -23,7 +23,7 @@ public class Brinquedo implements ItemPedido {
 
 	@Override
 	public void setValor(Double valor) {
-		this.valor = valor;	
+		this.valor = valor;
 	}
 
 	@Override
@@ -33,6 +33,6 @@ public class Brinquedo implements ItemPedido {
 
 	@Override
 	public void setDescricao(String descricao) {
-		this.descricao = descricao;	
+		this.descricao = descricao;
 	}
 }

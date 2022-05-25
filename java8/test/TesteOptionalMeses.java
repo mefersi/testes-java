@@ -8,7 +8,7 @@ public class TesteOptionalMeses {
 
 		Optional<String> mesNovembro = recupereNomeMesOptional(11);
 		System.out.println(mesNovembro);
-		
+
 		Optional<String> mesTreze = recupereNomeMesOptional(13);
 		System.out.println(mesTreze);
 	}
@@ -21,7 +21,7 @@ public class TesteOptionalMeses {
 		case 2:
 			return Optional.of("Fevereiro");
 		case 3:
-			return Optional.of("Março");
+			return Optional.of("Marï¿½o");
 		case 4:
 			return Optional.of("Abril");
 		case 5:

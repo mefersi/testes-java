@@ -26,7 +26,7 @@ public class TesteLerEEscreverArquivoCsv {
 		String pastaOrigemPath = arquivoOrigem.getParent();
 
 		boolean criarPastaSucess = new File(pastaOrigemPath + "\\saida").mkdir();
-		System.out.println("Diretório criado com sucesso!" + criarPastaSucess);
+		System.out.println("Diretï¿½rio criado com sucesso!" + criarPastaSucess);
 
 		String arquivoDestinoPath = pastaOrigemPath + "\\saida\\saidaProdutos.csv";
 
@@ -60,6 +60,5 @@ public class TesteLerEEscreverArquivoCsv {
 		} catch (IOException e) {
 			System.out.println("Erro na leitura do arquivo: " + e.getMessage());
 		}
-
 	}
 }

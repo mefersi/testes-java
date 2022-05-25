@@ -3,7 +3,7 @@ package model;
 public class Vendedor extends Pessoa {
 
 	private double salario;
-	
+
 	public Vendedor() {
 	}
 
@@ -11,11 +11,11 @@ public class Vendedor extends Pessoa {
 		super(nome, cpf, email, telefone);
 		this.salario = salario;
 	}
-	
+
 	public double getSalario() {
 		return salario;
 	}
-	
+
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}

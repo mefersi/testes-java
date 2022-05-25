@@ -4,15 +4,15 @@ public class ClienteLoja extends PessoaLoja implements LoginLoja {
 
 	private String sexo;
 	private AutenticaUsuario autenticador;
-	
+
 	public ClienteLoja() {
 		autenticador = new AutenticaUsuario();
 	}
-	
+
 	public String getSexo() {
 		return sexo;
 	}
-	
+
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}

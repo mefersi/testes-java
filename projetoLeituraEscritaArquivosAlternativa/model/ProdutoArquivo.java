@@ -5,7 +5,7 @@ public class ProdutoArquivo {
 	private String nome;
 	private Double preco;
 	private Integer quantidade;
-	
+
 	public ProdutoArquivo(String nome, Double preco, Integer quantidade) {
 		this.nome = nome;
 		this.preco = preco;
@@ -35,7 +35,7 @@ public class ProdutoArquivo {
 	public void setQuantidade(Integer quantidade) {
 		this.quantidade = quantidade;
 	}
-	
+
 	public double total() {
 		return quantidade * preco;
 	}

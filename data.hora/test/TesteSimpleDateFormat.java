@@ -11,7 +11,7 @@ public class TesteSimpleDateFormat {
 		Date date = new Date();
 		String dataFormatada = sdf.format(date);
 		System.out.println(dataFormatada);
-		
+
 		Calendar calendar = Calendar.getInstance();
 		Date calendarAsDate = calendar.getTime();
 		String calendarFormatado = sdf.format(calendarAsDate);

@@ -1,6 +1,5 @@
 package model;
 
-
 public class Musica implements Comparable<Musica> {
 
 	private String nome;
@@ -21,15 +20,15 @@ public class Musica implements Comparable<Musica> {
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public double getTempo() {
 		return tempo;
 	}
-	
+
 	public String getInterprete() {
 		return interprete;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "musica: " + this.nome + ", Interprete: " + this.interprete + ", duracao: " + this.tempo;

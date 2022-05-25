@@ -13,7 +13,7 @@ public class Planta {
 	private Set<Suculenta> suculentas = new HashSet<Suculenta>();
 	private Set<Cacto> cactos = new HashSet<Cacto>();
 	private Map<Integer, Suculenta> codigoSuculenta = new HashMap<>();
-	
+
 	public Planta(String descricao) {
 		this.descricao = descricao;
 	}
@@ -37,20 +37,20 @@ public class Planta {
 	public Set<Suculenta> getSuculentas() {
 		return Collections.unmodifiableSet(suculentas);
 	}
-	
+
 	public Set<Cacto> getCactos() {
 		return Collections.unmodifiableSet(cactos);
 	}
-	
+
 	public void adiciona(Suculenta suculenta) {
 		this.suculentas.add(suculenta);
 		this.codigoSuculenta.put(suculenta.getCodigo(), suculenta);
 	}
-	
+
 	public void adiciona(Cacto cacto) {
 		this.cactos.add(cacto);
 	}
-	
+
 	public Suculenta buscaSuculenta(int codigo) {
 		if (!codigoSuculenta.containsKey(codigo)) {
 			throw new NoSuchElementException("Codigo da suculenta nao encontrado!");

@@ -9,11 +9,8 @@ public class TesteStreamCount {
 
 		List<Integer> numeros = Arrays.asList(0, 1, 2, 1, 2, 3, 4, 5, 5, 6, 7, 8, 8, 9, 10, 10);
 
-		long quantidade = numeros.stream()
-			.filter(n -> n % 2 != 0)
-			.count();
-		
+		long quantidade = numeros.stream().filter(n -> n % 2 != 0).count();
+
 		System.out.println(quantidade);
-		
 	}
 }

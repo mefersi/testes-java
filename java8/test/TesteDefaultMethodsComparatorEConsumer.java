@@ -22,7 +22,6 @@ public class TesteDefaultMethodsComparatorEConsumer {
 
 		Consumer<String> consumidor = new ImprimeNomes();
 		nomes.forEach(consumidor);
-
 	}
 }
 

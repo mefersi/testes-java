@@ -44,5 +44,4 @@ public class ContaCorrente extends Conta implements Extrato {
 	public String toString() {
 		return "ContaCorrente, " + super.toString();
 	}
-
 }

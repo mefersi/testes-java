@@ -1,7 +1,7 @@
 package model;
 
 public class ContaPoupanca extends Conta implements Extrato {
-	
+
 	private ExtratoUtil extrato;
 
 	public ContaPoupanca(int agencia, int numero) {

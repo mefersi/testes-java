@@ -3,8 +3,8 @@ package test;
 public class TesteStringBuilder1 {
 
 	public static void main(String[] args) {
-		
-		StringBuilder sb = new StringBuilder("É preciso");
+
+		StringBuilder sb = new StringBuilder("ï¿½ preciso");
 		sb.append(" amar");
 		sb.append(" as pessoas");
 		sb.append(" como se nao");

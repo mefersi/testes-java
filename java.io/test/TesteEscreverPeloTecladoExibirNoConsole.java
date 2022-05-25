@@ -13,24 +13,24 @@ import java.io.Writer;
 public class TesteEscreverPeloTecladoExibirNoConsole {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		InputStream is = System.in;
 		Reader isr = new InputStreamReader(is);
 		BufferedReader br = new BufferedReader(isr);
-		
+
 		OutputStream os = System.out;
 		Writer osw = new OutputStreamWriter(os);
 		BufferedWriter bw = new BufferedWriter(osw);
-		
+
 		String linha = br.readLine();
-		
+
 		while (linha != null && !linha.isEmpty()) {
 			bw.write(linha);
 			bw.newLine();
 			bw.flush();
 			linha = br.readLine();
 		}
-		
+
 		br.close();
 		bw.close();
 	}

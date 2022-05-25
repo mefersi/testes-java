@@ -9,21 +9,21 @@ import model.PedidoImpl;
 public class TesteProjetoComClasseAnonima {
 
 	public static void main(String[] args) {
-		
+
 		Pedido pedido = new PedidoImpl();
-		
+
 		Livro livro = new Livro();
 		Brinquedo brinquedo = new Brinquedo();
-		
+
 		pedido.adicionarItem(livro);
 		pedido.adicionarItem(brinquedo);
-		
+
 		ItemPedido caneta = new ItemPedido() {
-			
+
 			private Integer codigo;
 			private Double valor;
 			private String descricao;
-			
+
 			@Override
 			public Integer getCodigo() {
 				return codigo;
@@ -41,7 +41,7 @@ public class TesteProjetoComClasseAnonima {
 
 			@Override
 			public void setValor(Double valor) {
-				this.valor = valor;	
+				this.valor = valor;
 			}
 
 			@Override
@@ -51,18 +51,18 @@ public class TesteProjetoComClasseAnonima {
 
 			@Override
 			public void setDescricao(String descricao) {
-				this.descricao = descricao;	
+				this.descricao = descricao;
 			}
 		};
-		
+
 		pedido.adicionarItem(caneta);
-		
+
 		pedido.adicionarItem(new ItemPedido() {
-			
+
 			private Integer codigo;
 			private Double valor;
 			private String descricao;
-			
+
 			@Override
 			public Integer getCodigo() {
 				return codigo;
@@ -80,7 +80,7 @@ public class TesteProjetoComClasseAnonima {
 
 			@Override
 			public void setValor(Double valor) {
-				this.valor = valor;	
+				this.valor = valor;
 			}
 
 			@Override
@@ -90,11 +90,10 @@ public class TesteProjetoComClasseAnonima {
 
 			@Override
 			public void setDescricao(String descricao) {
-				this.descricao = descricao;	
+				this.descricao = descricao;
 			}
 		});
-		
+
 		System.out.println(pedido.getItensPedidos());
-		
 	}
 }

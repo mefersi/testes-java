@@ -6,5 +6,4 @@ public class Peixe extends Animal2 {
 	public String movimenta() {
 		return "Nadando";
 	}
-
 }

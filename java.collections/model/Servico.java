@@ -7,7 +7,7 @@ public class Servico {
 
 	private String nome;
 	private double preco;
-	
+
 	public Servico(String nome, double preco) {
 		if (nome == null) {
 			throw new NullPointerException("O nome nao deve ser nulo!");
@@ -18,15 +18,15 @@ public class Servico {
 		this.nome = nome;
 		this.preco = preco;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public double getPreco() {
 		return preco;
 	}
-	
+
 //	@Override
 //	public boolean equals(Object obj) {
 //		Servico outro = (Servico) obj;
@@ -55,7 +55,7 @@ public class Servico {
 		return Objects.equals(nome, other.nome)
 				&& Double.doubleToLongBits(preco) == Double.doubleToLongBits(other.preco);
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Servico: " + this.nome + ", R$" + this.preco;

@@ -3,7 +3,7 @@ package model;
 public class SistemaSite {
 
 	private int senha = 333;
-	
+
 	public void autenticacao(LoginLoja l) {
 		boolean autenticou = l.autentica(this.senha);
 		if (autenticou) {

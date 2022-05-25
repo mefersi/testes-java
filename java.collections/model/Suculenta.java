@@ -6,7 +6,7 @@ public class Suculenta {
 
 	private String nome;
 	private int codigo;
-	
+
 	public Suculenta(String nome, int codigo) {
 		super();
 		this.nome = nome;
@@ -28,7 +28,7 @@ public class Suculenta {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(codigo, nome);

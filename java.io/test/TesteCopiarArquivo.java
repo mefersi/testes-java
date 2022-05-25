@@ -19,7 +19,7 @@ public class TesteCopiarArquivo {
 		InputStream fis = new FileInputStream("C:\\Users\\jaque\\OneDrive\\Documentos\\JavaAluraTests\\arquivo1.txt");
 		Reader isr = new InputStreamReader(fis);
 		BufferedReader br = new BufferedReader(isr);
-		
+
 		OutputStream fos = new FileOutputStream("C:\\Users\\jaque\\OneDrive\\Documentos\\JavaAluraTests\\arquivo2.txt");
 		Writer osw = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(osw);
@@ -31,7 +31,7 @@ public class TesteCopiarArquivo {
 			bw.newLine();
 			linha = br.readLine();
 		}
-		
+
 		br.close();
 		bw.close();
 	}

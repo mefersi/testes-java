@@ -6,7 +6,7 @@ public class PedidoImpl implements Pedido {
 
 	private Integer codigo;
 	private List<ItemPedido> itens;
-	
+
 	@Override
 	public Integer getCodigo() {
 		return codigo;
@@ -15,13 +15,11 @@ public class PedidoImpl implements Pedido {
 	@Override
 	public void adicionarItem(ItemPedido itemPedido) {
 		itens.add(itemPedido);
-		
+
 	}
 
 	@Override
 	public List<ItemPedido> getItensPedidos() {
 		return itens;
 	}
-
-	
 }

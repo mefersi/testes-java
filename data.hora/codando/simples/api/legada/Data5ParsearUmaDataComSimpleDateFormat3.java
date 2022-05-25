@@ -7,11 +7,11 @@ import java.util.Date;
 public class Data5ParsearUmaDataComSimpleDateFormat3 {
 
 	public static void main(String[] args) throws ParseException {
-		
-		// assim como o calendar o sdf também é leniente
+
+		// assim como o calendar o sdf tambï¿½m ï¿½ leniente
 		SimpleDateFormat parser = new SimpleDateFormat("dd/MM/yyyy");
 		parser.setLenient(false);
-		
+
 		Date date = parser.parse("28/02/2022");
 		System.out.println(date);
 	}

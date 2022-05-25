@@ -6,5 +6,4 @@ public class Cobra extends Animal2 {
 	public String movimenta() {
 		return "Rastejando";
 	}
-
 }

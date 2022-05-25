@@ -8,34 +8,35 @@ import java.util.TimeZone;
 public class Data4ComoSimpleDateFormatUsaLocale {
 
 	public static void main(String[] args) {
-		
+
 		// para saber o default do locale na JVM
 		System.out.println(Locale.getDefault());
-		
-		// para mudar o locale (obs. muda o Locale para toda a aplicação)
+
+		// para mudar o locale (obs. muda o Locale para toda a aplicaï¿½ï¿½o)
 //		Locale.setDefault(Locale.US);
 //		Locale.setDefault(Locale.ENGLISH);
-		
-		// EEEE para imprimir o dia por escrito e MMMM para imprimir o mês por escrito
+
+		// EEEE para imprimir o dia por escrito e MMMM para imprimir o mï¿½s por escrito
 //		SimpleDateFormat sdf = new SimpleDateFormat("EEEE dd/MMMM/yyyy");
-		
-		// para setar o Locale para apenas um ponto da aplicação, podemos passar o Locale no contrutor do sdf
+
+		// para setar o Locale para apenas um ponto da aplicaï¿½ï¿½o, podemos passar o
+		// Locale no contrutor do sdf
 //		SimpleDateFormat sdf = new SimpleDateFormat("EEEE dd/MMMM/yyyy", Locale.ENGLISH);
-		
-		// É possivel criar o próprio Locale
+
+		// ï¿½ possivel criar o prï¿½prio Locale
 		Locale meuLocale = new Locale("pt");
-		
+
 		// mudando para o locale personalizado
 		SimpleDateFormat sdf = new SimpleDateFormat("EEEE dd/MMMM/yyyy", meuLocale);
-		
+
 		// usando o sdf com o locale em ingles
 		SimpleDateFormat sdf2 = new SimpleDateFormat("EEEE dd/MMMM/yyyy", Locale.ENGLISH);
-		
-		// é possivel setar também o timezone
-		sdf2.setTimeZone(TimeZone.getTimeZone("Australia/Sydney"));	
-		
+
+		// ï¿½ possivel setar tambï¿½m o timezone
+		sdf2.setTimeZone(TimeZone.getTimeZone("Australia/Sydney"));
+
 		Date date = new Date();
-		
+
 		System.out.println(sdf.format(date));
 		System.out.println(sdf2.format(date));
 	}

@@ -14,63 +14,63 @@ public class Papelaria {
 	private Vendedor vendedor;
 	private List<Produto> produtos = new ArrayList<Produto>();
 	private Set<Servico> servicos = new HashSet<>();
-	
+
 	public Papelaria(String nome) {
 		this.nome = nome;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public Endereco getEndereco() {
 		return endereco;
 	}
-	
+
 	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
-	
+
 	public Proprietario getProprietario() {
 		return proprietario;
 	}
-	
+
 	public void setProprietario(Proprietario proprietario) {
 		this.proprietario = proprietario;
 	}
-	
+
 	public Vendedor getVendedor() {
 		return vendedor;
 	}
-	
+
 	public void setVendedor(Vendedor vendedor) {
 		this.vendedor = vendedor;
 	}
-	
+
 	public List<Produto> getProdutos() {
 		return Collections.unmodifiableList(produtos);
 	}
-	
+
 	public Set<Servico> getServicos() {
 		return Collections.unmodifiableSet(servicos);
 	}
-	
+
 	public void adiciona(Produto produto) {
 		this.produtos.add(produto);
 	}
-	
+
 	public void adiciona(Servico servico) {
 		this.servicos.add(servico);
 	}
-	
+
 	public double valorTotalProdutos() {
 		double soma = 0;
 		for (Produto produto : produtos) {
 			soma += produto.getPreco() * produto.getQuantidade();
-		}	
+		}
 		return soma;
 	}
-	
+
 	public double valorTotalServicos() {
 		double soma = 0;
 		for (Servico servico : servicos) {
@@ -78,7 +78,7 @@ public class Papelaria {
 		}
 		return soma;
 	}
-	
+
 	public double valorTotalProdutosServicos() {
 		return valorTotalProdutos() + valorTotalServicos();
 	}

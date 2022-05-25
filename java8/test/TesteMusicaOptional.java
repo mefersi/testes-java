@@ -9,7 +9,7 @@ import model.Musica;
 public class TesteMusicaOptional {
 
 	public static void main(String[] args) {
-		
+
 		List<Musica> musicas = new ArrayList<>();
 		musicas.add(new Musica("Hunting high a low", 3.49, "A-ha"));
 		musicas.add(new Musica("The Unforgiven", 6.24, "Metallica"));
@@ -34,14 +34,14 @@ public class TesteMusicaOptional {
 		musicas.add(new Musica("Hope Leaves", 4.29, "Opeth"));
 		musicas.add(new Musica("Toxicity", 3.45, "System Of a Down"));
 		musicas.add(new Musica("What could have been", 6.30, "Novembers Doom"));
-		
+
 		Optional<Musica> m1 = Optional.of(new Musica("What could have been", 6.30, "Novembers Doom"));
 		if (m1.isPresent()) {
 			System.out.println(m1.get());
 		}
-		
+
 		// como aplicar os demais metodos optional aqui?
-		
+
 //		Optional<Musica> primeiroArtistaComL = musicas.stream()
 //			.filter(m -> m.getInterprete().charAt(0) == 'L')
 //			.findFirst();

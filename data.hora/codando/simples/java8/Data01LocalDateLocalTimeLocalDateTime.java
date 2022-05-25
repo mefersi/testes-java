@@ -9,21 +9,22 @@ import java.time.Month;
 public class Data01LocalDateLocalTimeLocalDateTime {
 
 	public static void main(String[] args) {
-		
-		// grupo de classes Local não possui informação de timezone, usa o timezone defaut só para criar a data, depois descarta
-		// LocalDate é usado para dia mes e ano
+
+		// grupo de classes Local nï¿½o possui informaï¿½ï¿½o de timezone, usa o timezone
+		// defaut sï¿½ para criar a data, depois descarta
+		// LocalDate ï¿½ usado para dia mes e ano
 		LocalDate date = LocalDate.of(2022, 02, 12);
 		System.out.println(date);
-		
-		// para horario é utilizado o LocalTime
+
+		// para horario ï¿½ utilizado o LocalTime
 		LocalTime hour = LocalTime.of(10, 30);
 		System.out.println(hour);
-		
+
 		// para trabalhar com data e hora
 		LocalDateTime localDateTime = LocalDateTime.of(date, hour);
 		System.out.println(localDateTime);
-		
-		// essa api não tem comportamento leniente
+
+		// essa api nï¿½o tem comportamento leniente
 		System.out.println("--------------------------------------------------------");
 		LocalDate now = LocalDate.now();
 		System.out.println(now);
@@ -32,10 +33,10 @@ public class Data01LocalDateLocalTimeLocalDateTime {
 		int dayOfMonth = now.getDayOfMonth();
 		System.out.println("Dia: " + dayOfMonth);
 		Month month = now.getMonth();
-		System.out.println("Mês: " + month);
+		System.out.println("Mï¿½s: " + month);
 		int year = now.getYear();
 		System.out.println("Ano: " + year);
-		
+
 		LocalTime hourNow = LocalTime.now();
 		System.out.println(hourNow);
 		int hour2 = hourNow.getHour();

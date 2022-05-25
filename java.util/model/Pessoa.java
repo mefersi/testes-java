@@ -9,7 +9,7 @@ public class Pessoa {
 
 	public Pessoa() {
 	}
-	
+
 	public Pessoa(String nome, String cpf, String email, int telefone) {
 		this.nome = nome;
 		this.cpf = cpf;

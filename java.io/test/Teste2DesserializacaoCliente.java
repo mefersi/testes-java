@@ -10,7 +10,7 @@ import model.Cliente;
 public class Teste2DesserializacaoCliente {
 
 	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-		
+
 //		Cliente c = new Cliente();
 //		c.setNome("Yuri Stefani");
 //		c.setEmail("yuri@gmai.com");
@@ -21,7 +21,7 @@ public class Teste2DesserializacaoCliente {
 //		endereco.setNumero("11");
 //		endereco.setComplemento("Casa verde");
 //		endereco.setBairro("Flores");
-//		endereco.setCidade("São Paulo");
+//		endereco.setCidade("Sï¿½o Paulo");
 //		endereco.setEstado("SP");
 //		endereco.setPais("Brasil");
 //		
@@ -31,7 +31,7 @@ public class Teste2DesserializacaoCliente {
 //				new FileOutputStream("C:\\Users\\jaque\\OneDrive\\Documentos\\JavaAluraTests\\clienteSerializacao.bin"));
 //		oos.writeObject(c);
 //		oos.close();
-		
+
 		ObjectInputStream ois = new ObjectInputStream(
 				new FileInputStream("C:\\Users\\jaque\\OneDrive\\Documentos\\JavaAluraTests\\clienteSerializacao.bin"));
 		Cliente c = (Cliente) ois.readObject();

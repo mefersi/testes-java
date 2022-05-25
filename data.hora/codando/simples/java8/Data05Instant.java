@@ -5,36 +5,40 @@ import java.time.Instant;
 public class Data05Instant {
 
 	public static void main(String[] args) {
-		
-		// instant representa a quantidade de milissegundos a partir de um ponto de partida
-		// a saída é uma data em formato ISO 8601 UTC
+
+		// instant representa a quantidade de milissegundos a partir de um ponto de
+		// partida
+		// a saï¿½da ï¿½ uma data em formato ISO 8601 UTC
 		Instant now = Instant.now();
 		System.out.println(now);
-		
-		// para saber em milissegundos usamsamos o seguinte método
+
+		// para saber em milissegundos usamsamos o seguinte mï¿½todo
 		System.out.println(now.toEpochMilli());
-		
-		// não aceita setar um timezone porque ele não depende de timezone
-		// somente o zdt e ofdt tem um método .toInstant porque eles tem informação de offset	
-		// o localdatetime também tem o método mas precisa que seja setado o offset no método para que funcione
-		
-		// se só é necessaria a quantidade de milissegundos, é possível obter de forma mais simples
+
+		// nï¿½o aceita setar um timezone porque ele nï¿½o depende de timezone
+		// somente o zdt e ofdt tem um mï¿½todo .toInstant porque eles tem informaï¿½ï¿½o de
+		// offset
+		// o localdatetime tambï¿½m tem o mï¿½todo mas precisa que seja setado o offset no
+		// mï¿½todo para que funcione
+
+		// se sï¿½ ï¿½ necessaria a quantidade de milissegundos, ï¿½ possï¿½vel obter de forma
+		// mais simples
 		long currentTimeMillis = System.currentTimeMillis();
 		System.out.println(currentTimeMillis);
-		
+
 		// para comparar dois instant
 		Instant instant1 = Instant.now();
 		Instant instant2 = Instant.now();
-		
+
 		// se um vem depois que o outro
 		boolean after = instant1.isAfter(instant2);
 		System.out.println(after);
-		
-		// se um é antes que o outro
+
+		// se um ï¿½ antes que o outro
 		boolean before = instant1.isBefore(instant2);
 		System.out.println(before);
-		
-		// se os dois são iguais
+
+		// se os dois sï¿½o iguais
 		boolean equals = instant1.equals(instant2);
 		System.out.println(equals);
 	}

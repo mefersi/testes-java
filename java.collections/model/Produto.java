@@ -4,11 +4,11 @@ import java.security.InvalidParameterException;
 import java.util.Objects;
 
 public class Produto implements Comparable<Produto> {
-	
+
 	private String nome;
 	private Double preco;
 	private int quantidade;
-	
+
 	public Produto(String nome, Double preco, int quantidade) {
 		if (nome == null) {
 			throw new NullPointerException("O nome do produto nao deve ser nulo!");
@@ -20,23 +20,23 @@ public class Produto implements Comparable<Produto> {
 		this.preco = preco;
 		this.quantidade = quantidade;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
-	
+
 	public Double getPreco() {
 		return preco;
 	}
-	
+
 	public int getQuantidade() {
 		return quantidade;
 	}
-	
+
 	public double precoTotal() {
 		return preco * quantidade;
 	}
-	
+
 //	@Override
 //	public boolean equals(Object obj) {
 //		Produto outro = (Produto) obj;
@@ -69,7 +69,7 @@ public class Produto implements Comparable<Produto> {
 	public String toString() {
 		return "Produto: " + this.nome + ", R$" + this.preco + ", quantidade: " + this.quantidade;
 	}
-	
+
 	@Override
 	public int compareTo(Produto o) {
 		return this.nome.compareTo(o.nome);

@@ -16,18 +16,17 @@ public class TesteImprimirChaveValorAssociacaoMapEntry2 {
 		produtos.put("Caneta", 2.50);
 		produtos.put("Lapis", 1.00);
 		produtos.put("Borracha", 0.50);
-		
-		//para acessar as chaves e exibir o nome do produto
+
+		// para acessar as chaves e exibir o nome do produto
 		Set<String> chaves = produtos.keySet();
 		chaves.forEach(nomeProduto -> System.out.println(nomeProduto));
-		
-		//para acessar os valores e exibir o preco
+
+		// para acessar os valores e exibir o preco
 		Collection<Double> valores = produtos.values();
 		valores.forEach(preco -> System.out.println(preco));
-		
-		//para acessar a associacao e imprimir a chave e o valor
+
+		// para acessar a associacao e imprimir a chave e o valor
 		Set<Entry<String, Double>> associacoes = produtos.entrySet();
 		associacoes.forEach(associacao -> System.out.println(associacao.getKey() + " - " + associacao.getValue()));
-		
 	}
 }
